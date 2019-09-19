@@ -10,5 +10,8 @@
   "license": "ISC",
   "devDependencies": {
     "bootstrap": "4.3.1"
+  },
+  "dependencies": {
+    "hello-week": "^2.10.3"
   }
 }

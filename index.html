@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/node_modules/hello-week/dist/css/hello.week.min.css">
+    <link rel="stylesheet" href="/node_modules/hello-week/dist/css/hello.week.theme.min.css">
+</head>
+<body>
+    burp
+    <div class="hello-week">
+        <div class="navigation">
+            <button class="prev">Prev</button>
+            <div class="period"></div>
+            <button class="next">Next</button>
+        </div>
+        <div class="week"></div>
+        <div class="month"></div>
+    </div>
+
+    <script src="/node_modules/hello-week/dist/hello.week.min.js"></script>
+    <script>
+        new HelloWeek({
+            selector: '.hello-week',
+            lang: 'en',
+            langFolder: '/node_modules/hello-week/dist/langs/',
+            format: 'MM/DD/YYYY',
+            weekShort: true,
+            monthShort: false,
+            multiplePick: false,
+            defaultDate: null,
+            todayHighlight: true,
+            disablePastDays: false,
+            disabledDaysOfWeek: null,
+            disableDates: null,
+            weekStart: 0, // week start on Sunday
+            daysHighlight: null,
+            daysSelected: null,
+            range: false,
+            rtl: false,
+            locked: false,
+            minDate: null,
+            maxDate: null,
+            nav: ['◀', '▶'],
+            onLoad: () => { /** callback function */ },
+            onChange: () => { /** callback function */ },
+            onSelect: () => { /** callback function */ },
+            onClear: () => { /** callback function */ }
+        });
+        
+    </script>
+</body>
+</html>
